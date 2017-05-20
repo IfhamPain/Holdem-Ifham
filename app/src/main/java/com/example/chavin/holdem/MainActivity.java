@@ -158,6 +158,7 @@
                                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                                             if (task.isSuccessful()) {
+                                                //Creating branch in Firebase database
                                                 DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("Users");
                                                 databaseReference = databaseReference.child(user.getUid()).child("User Detail");
 

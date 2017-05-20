@@ -38,7 +38,7 @@ public class NewBrush extends AppCompatActivity {
               
             }
         });
-
+        //Printing out the date to buy a new brush
         Calendar c=new GregorianCalendar();
         c.add(Calendar.DATE, 30);
         Date d=c.getTime();
